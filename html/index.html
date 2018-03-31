@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang='ja'>
+
+<head>
+    <meta charset='utf8'>
+    <meta name="description" content='初めてのHTML文章です'>
+    <title>はじめてのHTML</title>
+    <link rel="shortcut icon" href="https://www.google.co.jp/imgres?imgurl=http%3A%2F%2Fwww.pokemon.jp%2Fzukan%2Fimages%2Fl%2Fc5fafc4eb49bf278eaf9f4525cf0cf01.png&imgrefurl=http%3A%2F%2Fwww.pokemon.jp%2Fzukan%2Fdetail%2F202.html&docid=v3MvTjQyHP258M&tbnid=t6k-03d5DSHyIM%3A&vet=10ahUKEwj4uNfO9ZXaAhVGlJQKHT1GCyAQMwi_AigAMAA..i&w=588&h=588&bih=705&biw=1440&q=%E3%82%BD%E3%83%BC%E3%83%8A%E3%83%B3%E3%82%B9&ved=0ahUKEwj4uNfO9ZXaAhVGlJQKHT1GCyAQMwi_AigAMAA&iact=mrc&uact=8">
+    <!-- <style>
+            body {background: skyblue;}
+        </style> -->
+    <link rel='stylesheet' href='mystyles.css'>
+</head>
+
+<body>
+    <p id='message'>こんにちはあああ</p>
+    <p class='message active'>こんにちはあああ</p>
+    <p class='message' style='background: skyblue'>こんにちはあああ</p>
+
+    <header>
+        <h1 id='stuff'>おいしいごはん！</h1>
+        <nav>
+            ホーム このサイトについて プロフィール
+        </nav>
+    </header>
+    <section>
+        <h1>今月の美味しいご飯</h1>
+        <article>
+            <h1>美味しいご飯#12</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Size</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>S</td>
+                        <td>150</td>
+                    </tr>
+                    <tr>
+                        <td>M</td>
+                        <td>180</td>
+                    </tr>
+                    <tr>
+                        <td colspan='2'>free for kids!</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div style='background:skyblue;'>
+                <p>至高
+                    <br>の
+                    <strong>TKG</strong> →
+                    <a href='more.html'>もっと見る</a> →
+                    <a href='#stuff'>材料</a>
+                </p>
+                <hr>
+                <p>ところで，，，</p>
+                <h2>材料</h2>
+                <ul>
+                    <li>
+                        <span style='color:gold;'>卵</span>
+                    </li>
+                    <li>
+                        <a href='http://dotinstall.com' target='_blank'>醤油</a>
+                    </li>
+                </ul>
+                <h2>手順</h2>
+                <ol>
+                    <li>まぜる</li>
+                    <li>かける</li>
+                </ol>
+                <dl>
+                    <dt>TKG</dt>
+                    <dd>TAMAGO KAKE GOHAN</dd>
+                </dl>
+            </div>
+            <pre>
+                    poem
+                        poem
+                            poem
+                </pre>
+            <blockquote>
+                TKG!! by tsuno
+            </blockquote>
+        </article>
+    </section>
+    <section>
+        <h1>新着の美味しいご飯</h1>
+        <article>
+            <h1>美味しいご飯#32</h1>
+            <p>
+                <img src='food.jpg' width='150' heigtht='150' alt='chaomanghi' />
+            </p>
+        </article>
+
+        <article>
+            <h1>美味しいご飯 #31</h1>
+            <form action='survey.php' method='post'>
+                <p>メールアドレス:
+                    <input type='text' name='email' size='50' maxlength='5' value='abc'>
+                </p>
+                <p>
+                    <input type='submit' value='送信' disabled>
+                </p>
+            </form>
+            <h1>美味しいご飯 #33</h1>
+            <form action='survey.php' method='post'>
+                <p>ログイン:
+                    <input type='password' name='password' size='50' placeholder='please enter password'>
+                </p>
+                <input type='hidden' name='user_id' value='0709'>
+                <p>
+                    <input type='submit' value='送信'>
+                </p>
+            </form>
+            <form action='survey.php' method='post'>
+                <p>コメント:
+                    <textarea name='comment' cols='40' rows='5'>コメント!</textarea>
+                </p>
+                <p>
+                    <button type='submit'>
+                        <strong>送信！</strong>
+                    </button>
+                </p>
+                <p>
+                    <button type='button'>処理をする!</button>
+                </p>
+                <p>
+                    <input type='submit' value='送信！' disabled>
+                </p>
+            </form>
+            <form action='survey.php' method='post'>
+                <p>メールアドレス:
+                    <input type='text' name='email'>
+                </p>
+                <p>
+                    Phone:
+                    <label>
+                        <input type='checkbox' name='phone' value='android'> Android</label>
+                    <input type='checkbox' name='phone' value='iphone' id='iphone' checked>
+                    <label for='iphone'>iPhone</label>
+                </p>
+                <p>
+                    Color:
+                    <input type='radio' name='color' value='red' checked> Red
+                    <input type='radio' name='color' value='blue'> Blue
+                </p>
+                <p>City:
+                    <select name='city'>
+                        <option value='tokyo'>Tokyo</option>
+                        <option value='nagoya'>Nagoya</option>
+                        <option value='osaka' selected>Osaka</option>
+                        <option value='kyoto'>Kyoto</option>
+                        <option value='fukuoka'>Fukuoka</option>
+                    </select>
+                </p>
+                <p>City:
+                    <select name='city' multiple size='5'>
+                        <option value='tokyo'>Tokyo</option>
+                        <option value='nagoya'>Nagoya</option>
+                        <option value='osaka' selected>Osaka</option>
+                        <option value='kyoto'>Kyoto</option>
+                        <option value='fukuoka'>Fukuoka</option>
+                    </select>
+                    <p>メールアドレス in &lt;p&gt;タグ: <input type='email' name='email' required></p>
+                    <p>料金: <input type='number' name='price'></p>
+                    <p>誕生日: <input type='date' name='birthday'></p>
+                    <p><input type='submit' value='送信する&quot;！！'></p>
+                </p>
+            </form>
+        </article>
+    </section>
+    <aside>
+        <h1>おすすめのレシピ本</h1>
+    </aside>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>
